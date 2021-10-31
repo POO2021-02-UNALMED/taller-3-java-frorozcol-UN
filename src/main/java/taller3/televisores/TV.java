@@ -43,7 +43,7 @@ public class TV {
 		return volumen;
 	}
 
-	 void setVolumen(int volumen) {
+	public void setVolumen(int volumen) {
 		int minVolumen = 1;
 		int maxVolumen = 7;
 		
