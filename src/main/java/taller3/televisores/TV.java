@@ -97,4 +97,8 @@ public class TV {
 	 public void volumenUp() {
 		setVolumen(volumen++);
 	}
+
+	public boolean getEstado() {
+		return estado;
+	}
 }
