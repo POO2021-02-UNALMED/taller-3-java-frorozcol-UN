@@ -12,6 +12,7 @@ public class TV {
     public TV(Marca marca, boolean estado) {
 		this.setMarca(marca);
 		this.estado = estado;
+		TV.numTv++;
 	}
 
     //getter and setter.
@@ -44,7 +45,7 @@ public class TV {
 	}
 
 	public void setVolumen(int volumen) {
-		int minVolumen = 1;
+		int minVolumen = 0;
 		int maxVolumen = 7;
 		
 		if (volumen>=minVolumen && volumen<maxVolumen && this.estado) {
