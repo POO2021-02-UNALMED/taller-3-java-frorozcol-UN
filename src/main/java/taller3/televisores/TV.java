@@ -48,10 +48,10 @@ public class TV {
 		int minVolumen = 0;
 		int maxVolumen = 7;
 		
-		if (volumen>=minVolumen && volumen<maxVolumen && this.estado) {
+		if (volumen>=minVolumen && volumen<=maxVolumen && this.estado) {
 			this.volumen = volumen;
 		}
-		return;
+		else return;
 	}
 
 	public int getCanal() {
@@ -64,7 +64,7 @@ public class TV {
 		if(canal >= minCanal && canal <= maxCanal && this.estado) {
 			this.canal = canal;
 		}
-		return;
+		else return;
 	}
 
 	public static int getNumTV() {
