@@ -1,7 +1,5 @@
 package taller3.televisores;
 
-import java.util.ResourceBundle.Control;
-
 public class TV {
 	private Marca marca;
 	private int canal = 1;
