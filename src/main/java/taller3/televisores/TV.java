@@ -27,7 +27,7 @@ public class TV {
 		return control;
 	}
 	
-	 void setControl(Control control) {
+	public void setControl(Control control) {
 		this.control = control;
 	}
 
@@ -53,7 +53,7 @@ public class TV {
 		return;
 	}
 
-	 int getCanal() {
+	public int getCanal() {
 		return canal;
 	}
 
