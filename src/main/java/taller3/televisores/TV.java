@@ -48,7 +48,7 @@ public class TV {
 		int minVolumen = 0;
 		int maxVolumen = 7;
 		
-		if (volumen>=minVolumen && volumen<=maxVolumen && this.estado) {
+		if (volumen>=minVolumen && volumen<=maxVolumen && estado) {
 			this.volumen = volumen;
 		}
 		else return;
@@ -61,7 +61,7 @@ public class TV {
 	public void setCanal(int canal) {
 		int minCanal = 1;
 		int maxCanal = 120;
-		if(canal >= minCanal && canal <= maxCanal && this.estado) {
+		if(canal >= minCanal && canal <= maxCanal && estado) {
 			this.canal = canal;
 		}
 		else return;
@@ -85,18 +85,18 @@ public class TV {
 	}
 	
 	public void canalUp() {
-		setCanal(canal++);
+		setCanal(getCanal() + 1);
 	}
 	public void canalDown() {
-		setCanal(canal--);
+		setCanal(getCanal() - 1);
 	}
 	
 	public void volumenDown() {
-		setVolumen(volumen--);
+		setVolumen(getVolumen() - 1);
 		
 	}
 	 public void volumenUp() {
-		setVolumen(volumen++);
+		setVolumen(getVolumen() + 1);
 	}
 
 	public boolean getEstado() {
