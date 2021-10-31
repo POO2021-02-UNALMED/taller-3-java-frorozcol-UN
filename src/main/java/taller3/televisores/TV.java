@@ -25,11 +25,11 @@ public class TV {
 		this.marca = marca;
 	}
 
-	public main.java.taller3.televisores.Control getControl() {
+	public Control getControl() {
 		return control;
 	}
 	
-	 void setControl(main.java.taller3.televisores.Control control) {
+	 void setControl(Control control) {
 		this.control = control;
 	}
 
