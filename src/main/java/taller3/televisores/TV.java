@@ -1,4 +1,4 @@
-package main.java.taller3.televisores;
+package taller3.televisores;
 
 import java.util.ResourceBundle.Control;
 
@@ -8,7 +8,7 @@ public class TV {
     private boolean estado;
     private int precio = 500;
     private int volumen = 1;
-    private main.java.taller3.televisores.Control control;
+    private Control control;
     private static int numTv;
     
     public TV(Marca marca, boolean estado) {
