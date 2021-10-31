@@ -76,21 +76,21 @@ public class TV {
 	
 	//methods.
 	
-	 void turnOn() {
+	public void turnOn() {
 		estado = true;
 	}
-	 void turnOff() {
+	public void turnOff() {
 		estado = false;
 	}
 	
-	 void canalUp() {
+	public void canalUp() {
 		setCanal(canal++);
 	}
-	 void canalDown() {
+	public void canalDown() {
 		setCanal(canal--);
 	}
 	
-	 void volumenDown() {
+	public void volumenDown() {
 		setVolumen(volumen--);
 		
 	}
